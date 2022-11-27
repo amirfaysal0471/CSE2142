@@ -67,7 +67,7 @@ public class StudentList {
 				}
 			}
 			} catch (Exception e){} 
-			System.out.println("Data Loaded.");				
+			System.out.println("Data Loaded.");	//co			
 		}
 		else if(args[0].contains("c")) 
 		{
