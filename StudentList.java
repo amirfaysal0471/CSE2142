@@ -4,11 +4,13 @@ import java.util.*;
 public class StudentList {
 	public static void main(String[] args) {
 
-//		Check arguments
+ // this is the argument Part 
+ //value passed to a function
 		if(args[0].equals("a")) {
 			System.out.println("Loading data ...");			
 			try {
-			BufferedReader s = new BufferedReader(
+			BufferedReader s = new BufferedReader(   //Java simplifies
+
 					new InputStreamReader(
 							new FileInputStream("students.txt"))); 
 			String r = s.readLine();
@@ -17,7 +19,7 @@ public class StudentList {
 			} catch (Exception e){} 
 			System.out.println("Data Loaded.");
 		}
-		else if(args[0].equals("r")) 
+		else if(args[0].equals("r")) // CalculateCelsius function is called passing in the value 
 		{
 			System.out.println("Loading data ...");			
 			try {
@@ -33,7 +35,7 @@ public class StudentList {
 			} catch (Exception e){} 
 			System.out.println("Data Loaded.");			
 		}
-		else if(args[0].contains("+")){
+		else if(args[0].contains("+")){ //argument consists of a conclusion
 			System.out.println("Loading data ...");			
 			try {
 			BufferedWriter s = new BufferedWriter(
@@ -56,7 +58,7 @@ public class StudentList {
 			BufferedReader s = new BufferedReader(
 					new InputStreamReader(
 							new FileInputStream("students.txt"))); 
-			String r = s.readLine();
+			String r = s.readLine(); // Non-primitive data types - such as String
 			String i[] = r.split(",");	
 			boolean done = false;
 			String t = args[0].substring(1);
